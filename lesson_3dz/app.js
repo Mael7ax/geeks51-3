@@ -1,11 +1,11 @@
-function generateDigits(count = 4) {
+function generateDigits(count = 6) {
     const codeBox = document.getElementById('codeBox');
     codeBox.innerHTML = '';
 
     for (let i = 0; i < count; i++) {
         const digit = document.createElement('div');
         digit.className = 'digit';
-        digit.textContent = Math.floor(Math.random() * 10);
+        digit.textContent = Math.floor(Math.random() *  10);
         codeBox.appendChild(digit);
     }
 }
